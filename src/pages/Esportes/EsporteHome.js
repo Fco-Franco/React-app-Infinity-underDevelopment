@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 function EsporteHome() {
     document.title = "Esportes Home"
-    const voltar = useNavigate();
-
 
     return (
         <>

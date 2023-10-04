@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 
 function Aula06Menu() {
     document.title = "Aula 06 Menu"
-    const voltar = useNavigate();
     const voltarConst = useNavigate();
 
     // Função para lidar com a navegação para outra página

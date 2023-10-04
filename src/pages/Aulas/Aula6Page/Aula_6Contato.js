@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom"
 function Contact() {
     document.title = "Aula6 Contato"
     const voltarConst = useNavigate();
-    const voltar = useNavigate();
 
     // Função para lidar com a navegação para outra página
     const ClickPgIndex = () => {

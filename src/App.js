@@ -27,6 +27,7 @@ import Aula_6Contato from "./pages/Aulas/Aula6Page/Aula_6Contato";
 
 
 //Aula 7
+// import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
 import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
 import Aula_7Cursos from "./pages/Aulas/Aula7Page/Aula_7Cursos";
 import Aula_7Contato from "./pages/Aulas/Aula7Page/Aula_7Contato";
@@ -114,7 +115,7 @@ function App() {
                 <Route path="Aula_7CursosRoute" element={<Aula_7Cursos />} />
                 <Route path="Aula_07ContatoRoute" element={<Aula_7Contato />} />
                 <Route path="Aula_7MSGEnviadaRoute" element={<Aula_7MSGEnviada />} />
-                <Route path="Aula_7CursosDetRoute" element={<Aula_7CursosDet/>}/>
+                <Route path="Aula_7CursosDetRoute/:id" element={<Aula_7CursosDet/>}/>
 
               </Route>
             </>
