@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 
 // function TitleComponent(children);
 
-function Contact() {
+function Aula_6Contato() {
     document.title = "Aula6 Contato"
     const voltarConst = useNavigate();
 
@@ -16,7 +16,7 @@ function Contact() {
     };
 
     return (
-<>
+<> <h2>Aula 6 - Contato</h2>
     <div class="formContainer">
         <div class="formContato">
             <h1>Entre em contato</h1>
@@ -45,6 +45,6 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Aula_6Contato
 
 // Se nao for index criar componente com letra inicial maiuscula

@@ -12,8 +12,8 @@ function Aula_6Curso() {
 
     return (
 <>
-<h1>Aula 6 - Cursos</h1>
-<h2>Esses são os nossos cursos</h2>
+<h2>Aula 6 - Cursos</h2>
+<h3>Esses são os nossos cursos</h3>
 <ul>
     <li>Programação Fullstack</li>
     <li>Data Science</li>

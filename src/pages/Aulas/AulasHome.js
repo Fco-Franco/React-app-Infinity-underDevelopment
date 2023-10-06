@@ -1,3 +1,5 @@
+// import AulasMenu from "./AulasMenu"
+
 function AulasHome() {
     document.title = "Aulas"
     return (
@@ -14,6 +16,7 @@ function AulasHome() {
                 <p> <b> Aula 06 - </b> A Desenvolver</p>
                 <p> <b> Aula 07 - </b> A Desenvolver</p>
             </div>
+            {/* <AulasMenu/> */}
         </>
     )
 }

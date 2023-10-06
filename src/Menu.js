@@ -2,6 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom"
 
 
 function Menu() {
+    document.title = "Menu Inicial"
     const voltar = useNavigate()
     return (
     <>
@@ -11,7 +12,7 @@ function Menu() {
 
                 <li><Link class="menuPrincipal-item" to={"/esporte"}>Menu Esporte</Link></li>
         
-                <li><Link class="menuPrincipal-item" to={"/Aulas"}>Menu Aulas</Link></li>
+                <li><Link class="menuPrincipal-item" to={"/aulas"}>Menu Aulas</Link></li>
 
                 <li><Link class="menuPrincipal-item" onClick={() => voltar(-1)}>Voltar</Link></li>
 

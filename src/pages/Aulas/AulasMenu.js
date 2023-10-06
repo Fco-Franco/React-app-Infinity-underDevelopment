@@ -1,34 +1,34 @@
 import { Route, Link, Outlet, useNavigate, Routes } from "react-router-dom"
-import AulasHome from "./AulasHome";
+// import AulasHome from "./AulasHome";
 
 function AulasMenu() {
     return (
         <>
-            <nav class="menuPrincipal">
+<nav class="menuPrincipal">
 
-                <ul>
-                    <li><Link class="menuPrincipal-item" to={"Aula_1MenuRoute"}>Aula 01</Link></li>
+<ul>
+<li><Link class="menuPrincipal-item" to={"aula1Pg01"}>Aula 01</Link></li>
 
-                    <li><Link class="menuPrincipal-item" to={"Aula_2MenuRoute"}>Aula 02</Link></li>
+<li><Link class="menuPrincipal-item" to={"aula2Pg01"}>Aula 02</Link></li>
 
-                    <li><Link class="menuPrincipal-item" to={"Aula_3MenuRoute"}>Aula 03</Link></li>
+<li><Link class="menuPrincipal-item" to={"aula3Pg01"}>Aula 03</Link></li>
 
-                    <li><Link class="menuPrincipal-item" to={"Aula_4MenuRoute"}>Aula 04</Link></li>
+<li><Link class="menuPrincipal-item" to={"aula4Pg01"}>Aula 04</Link></li>
 
-                    <li><Link class="menuPrincipal-item" to={"Aula_5MenuRoute"}>Aula 05</Link></li>
+<li><Link class="menuPrincipal-item" to={"aula5Pg01"}>Aula 05</Link></li>
 
-                    <li> <Link class="menuPrincipal-item" to={"Aula_6MenuRoute"}>Aula 06</Link></li>
+<li> <Link class="menuPrincipal-item" to={"aula6Pg01"}>Aula 06</Link></li>
 
-                    <li> <Link class="menuPrincipal-item" to={"Aula_7MenuRoute"}>Aula 07</Link></li>
+<li> <Link class="menuPrincipal-item" to={"aula7Pg01"}>Aula 07</Link></li>
 
-                    <li> <Link class="menuPrincipal-item" to={"Aula_8MenuRoute"}>Aula 08</Link></li>
+<li> <Link class="menuPrincipal-item" to={"aula8Pg01"}>Aula 08</Link></li>
 
-                </ul>
-            </nav>
+</ul>
+</nav>
 
-            <Routes>
-                <Route index element={<AulasHome />} />
-            </Routes>
+            {/* <Routes> */}
+                {/* <Route index element={<AulasHome />} /> */}
+            {/* </Routes> */}
 
             <Outlet />
         </>

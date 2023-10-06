@@ -10,13 +10,13 @@ function Aula_7MSGEnviada(){
     
     return(
         <>
-            <h1>Mensagem enviada com sucesso</h1>
-            <p ><label className="negrito">Nome: </label>{localizacao.state.nome}</p>
-            <p> <label className="negrito">Email: </label>{localizacao.state.email}</p>
-            <p> <label className="negrito">Mensagem: </label>{localizacao.state.mensagem}</p>
-        </>
-    )
-    localizacao = useLocation("")
+<h1>Mensagem enviada com sucesso</h1>
+<p ><label className="negrito">Nome: </label>{localizacao.state.nome}</p>
+<p> <label className="negrito">Email: </label>{localizacao.state.email}</p>
+<p> <label className="negrito">Mensagem: </label>{localizacao.state.mensagem}</p>
+</>
+)
+
 }
 
 export default Aula_7MSGEnviada 

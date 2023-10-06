@@ -6,17 +6,10 @@ function EsporteMenu() {
     return (
         <>
             <nav class="menuPrincipal">
-                {/* <nav style={{backgroundColor:"yellow"}}> */}
-                {/* <ul>
-                
-                        <li> <Link class="menuPrincipal-item" to={"/"}>Pagina Inicial</Link></li>
+                <ul>
+                    <li> <Link class="menuPrincipal-item" to={"/esporte"}>Esportes pg Inicial</Link></li>
 
-                        <li> <Link class="menuPrincipal-item" onClick={() => voltar(-1)}>Voltar</Link></li>
-                    </ul> */}
-                    <ul>        
-                        <li> <Link class="menuPrincipal-item" to={"/esporte"}>Esportes Geral</Link></li>
-
-                        <li> <Link class="menuPrincipal-item" to={"futebol"}>Futebol</Link></li>
+                    <li> <Link class="menuPrincipal-item" to={"futebol"}>Futebol</Link></li>
                 </ul>
             </nav>
 

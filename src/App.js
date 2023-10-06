@@ -1,145 +1,126 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css"
 
-// Menu
-import Home from "./Home";
+//Menu 
 import Menu from "./Menu";
-import EsporteMenu from "./pages/Esportes/EsporteMenu";
-import AulasMenu from "./pages/Aulas/AulasMenu"
+import PgInitial from "./PgInitial";
 
 //Esportes
-import EsporteHome from "./pages/Esportes/EsporteHome";
+import EsporteHome from "./pages/Esportes/EsportesPgInitial";
+import EsporteMenu from "./pages/Esportes/EsporteMenu";
 import EsporteFutebol from "./pages/Esportes/EsporteFutebol";
 
 //Aulas
 import AulasHome from "./pages/Aulas/AulasHome";
-import Aula_1Menu from "./pages/Aulas/Aula1Page/Aula_1Menu"
-import Aula_2Menu from "./pages/Aulas/Aula2Page/Aula_2Menu"
-import Aula_3Menu from "./pages/Aulas/Aula3Page/Aula_3Menu"
-import Aula_4Menu from "./pages/Aulas/Aula4Page/Aula_4Menu"
-import Aula_5Menu from "./pages/Aulas/Aula5Page/Aula_5Menu"
-import Aula_6Menu from "./pages/Aulas/Aula6Page/Aula_6Menu"
-import Aula_7Menu from "./pages/Aulas/Aula7Page/Aula_7Menu"
-import Aula_8Menu from "./pages/Aulas/Aula8Page/Aula_8Menu";
+import AulasMenu from "./pages/Aulas/AulasMenu";
 
-//Aula 6
-import Aula_6Curso from "./pages/Aulas/Aula6Page/Aula_6Cursos";
+//Aula1
+import PgInitialAula1 from "./pages/Aulas/Aula1Page/PgInitialAula1"
+
+//Aula2
+import PgInitialAula2 from "./pages/Aulas/Aula2Page/PgInitialAula2"
+
+//Aula3
+import PgInitialAula3 from "./pages/Aulas/Aula3Page/PgInitialAula3"
+
+//Aula4
+import PgInitialAula4 from "./pages/Aulas/Aula4Page/PgInitialAula4"
+
+//Aula5
+import PgInitialAula5 from "./pages/Aulas/Aula5Page/PgInitialAula5"
+
+//Aula6
+import Aula6Pg01 from "./pages/Aulas/Aula6Page/Aula6Pg01"
+import Aula_6Cursos from "./pages/Aulas/Aula6Page/Aula_6Cursos"
 import Aula_6Contato from "./pages/Aulas/Aula6Page/Aula_6Contato";
 
-
-//Aula 7
-// import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
-import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
-import Aula_7Cursos from "./pages/Aulas/Aula7Page/Aula_7Cursos";
+//Aula7
+import Aula7Pg01 from "./pages/Aulas/Aula7Page/Aula7Pg01"
+import Aula_7Cursos from "./pages/Aulas/Aula7Page/Aula_7Cursos"
 import Aula_7Contato from "./pages/Aulas/Aula7Page/Aula_7Contato";
 import Aula_7MSGEnviada from "./pages/Aulas/Aula7Page/Aula_7MSGEnviada";
+import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
 
-import Aula08MenuRoute from "./pages/Aulas/Aula8Page/Aula_8Menu";
-
-import Page404 from "./Page404"
-
-import "./App.css"
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        {/* Rota Menu */}<>
-          <Route exact path="/" element={<Menu />}>{/* Rota fixa */}
-            <Route index element={<Home />} />
-            <Route exact path="EsporteMenu" element={<EsporteMenu />} />
-            <Route exact path="AulasHome" element={<AulasHome />} />
-          </Route>
-        </>
-
-        {/* Rota Esportes */}<>
-          <Route exact path="/" element={<Menu />}>{/* Rota fixa */}
-            {/* Rota fixa */}
-            <Route exact path="/esporte" element={<EsporteMenu />}>
-              <Route index element={<EsporteHome />} />
-              <Route exact path="futebol" element={<EsporteFutebol />} />
-              {/* <Route exact path="futebol" element={<Futebol />} /> */}
-            </Route>
-          </Route>
-        </>
-
-        {/* Rota Aulas */}<>
-          <Route exact path="/Aulas" element={<Menu />}>
-            {/* Rota fixa */}
-            <Route index element={<AulasMenu />} />
-            {/* Aulas Menu */}
-
-            {/* Rota 01 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route exact path="Aula_1MenuRoute" element={<Aula_1Menu />} />
-              </Route>
-            </>
-
-            {/* Rota 02 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route exact path="Aula_2MenuRoute" element={<Aula_2Menu />} />
-              </Route>
-            </>
-
-            {/* Rota 03 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route exact path="Aula_3MenuRoute" element={<Aula_3Menu />} />
-              </Route>
-            </>
-
-            {/* Rota 04 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route exact path="Aula_4MenuRoute" element={<Aula_4Menu />} />
-              </Route>
-            </>
-
-            {/* Rota Aula 5 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route index path="Aula_5MenuRoute" element={<Aula_5Menu />} />
-              </Route>
-            </>
+//Aula8
+import Aula8Pg01 from "./pages/Aulas/Aula8Page/Aula8Pg01"
 
 
-            {/* Rota Aula 6 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route index path="Aula_6MenuRoute" element={<Aula_6Menu />} />
-                <Route>
-                  <Route exact path="Aula_6CursoRoute" element={<Aula_6Curso />} />
-                  <Route exact path="Aula_6ContatoRoute" element={<Aula_6Contato />} />
+
+import Page404 from "./Page404";
+
+function App2() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Menu />}>
+                    {/* Rota fixa */}
+                    <Route index element={<PgInitial />} />
+
+                    {/* Rota Esportes */}<>
+                        <Route path="/esporte" element={<EsporteMenu />}>
+                            <Route index element={<EsporteHome />} />
+                            <Route path="esporte" element={<EsporteHome />} />
+                            <Route path="futebol" element={<EsporteFutebol />} />
+                        </Route>
+                    </>
+
+                    {/* Rota Aulas */}<>
+    <Route path="/aulas" element={<AulasMenu />} >
+<Route index element={<AulasHome />} />
+
+{/* Rota Aula 1 */}<>
+    <Route path="aula1Pg01" element={<PgInitialAula1 />} />
+</>
+{/* Rota Aula 2*/}<>
+    <Route path="aula2Pg01" element={<PgInitialAula2 />} />
+</>
+
+{/* Rota Aula 3 */}<>
+    <Route path="aula3Pg01" element={<PgInitialAula3 />} />
+</>
+
+{/* Rota Aula 4 */}<>
+    <Route path="aula4Pg01" element={<PgInitialAula4 />} />
+</>
+
+{/* Rota Aula 5 */}<>
+    <Route path="aula5Pg01" element={<PgInitialAula5 />} />
+</>
+
+{/* Rota Aula 6 */}<>
+    <Route path="aula6Pg01" element={<Aula6Pg01 />} />
+    <Route path="aula6Cursos" element={<Aula_6Cursos />} />
+    <Route path="aula6Contato" element={<Aula_6Contato />} />
+</>
+
+
+{/* Rota Aula 7 */}<>
+<Route path="aula7Pg01" element={<Aula7Pg01 />} />
+    <Route path="aula7Cursos" element={<Aula_7Cursos />} />
+    <Route path="aula7CursoDet/:id" element={<Aula_7CursosDet />}/>
+    
+    <Route path="aula7Contato" element={<Aula_7Contato />} />
+    <Route path="aula7MSGEnviada" element={<Aula_7MSGEnviada />} />
+</>
+
+{/* Rota Aula 8 */}<>
+<Route path="aula8Pg01" element={<Aula8Pg01 />} />
+    <Route path="aula7Cursos" element={<Aula_7Cursos />} />
+    <Route path="aula7CursoDet/:id" element={<Aula_7CursosDet />}/>
+
+    <Route path="aula7Contato" element={<Aula_7Contato />} />
+    <Route path="aula7MSGEnviada" element={<Aula_7MSGEnviada />} />
+</>
+    </Route>
+                    </>
                 </Route>
-              </Route></>
 
-
-            {/* Rota Aula7 */}<>
-              <Route element={<AulasMenu />} >
-                <Route index path="Aula_7MenuRoute" element={<Aula_7Menu />} />
-                <Route path="Aula_7CursosRoute" element={<Aula_7Cursos />} />
-                <Route path="Aula_07ContatoRoute" element={<Aula_7Contato />} />
-                <Route path="Aula_7MSGEnviadaRoute" element={<Aula_7MSGEnviada />} />
-                <Route path="Aula_7CursosDetRoute/:id" element={<Aula_7CursosDet/>}/>
-
-              </Route>
-            </>
-
-            {/* Rota Aula8 */}<>
-              <Route exact element={<AulasMenu />} >
-                <Route index path="Aula_8MenuRoute" element={<Aula_8Menu />} />
-              </Route>
-            </>
-
-          </Route>
-        </>
-
-        {/* Outras Rotas */}<>
-          <Route exact path="*" element={<Page404 />} />
-        </>
-
-      </Routes>
-    </BrowserRouter >
-
-
-  );
+                {/* Outras Rotas */}<>
+                    <Route exact path="*" element={<Page404 />} />
+                </>
+            </Routes>
+        </BrowserRouter >
+    )
 }
 
-export default App;
-
-
+export default App2
