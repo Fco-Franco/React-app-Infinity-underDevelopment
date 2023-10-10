@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: #FFF; */
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .PgInitialAula2{
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 160px;
+    background-image: url(https://i.ibb.co/3rvDw4L/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+  
+  }
+
+  .pgAulas{
+    color: black;
+  }

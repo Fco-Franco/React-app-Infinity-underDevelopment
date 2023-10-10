@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(192, 187, 187); 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -20,18 +24,24 @@ button :focus{
   background-color: blue;
 }
 
-.homePrincipalClass h3,
+
+.homePrincipalClass h3, .homePrincipalClass p,
 .Sites h3 {
+  color: black;
   border: solid rgb(158, 163, 158);
   border-left: 0px;
   border-right: 0px;
   padding: 10px;
+  border: 0;
 }
 
+.TextGeral{
+  color: black !important;
+}
 .menuPrincipal {
-  display: block;
+  /* display: block; */
   align-items: center;
-  background-color: #5b5f66;
+  background-color: gray;
   width: 100%;
   padding: 15px;
   font-weight: bolder;
@@ -54,15 +64,23 @@ li {
 
 .pgAulas{
   padding: 10px;  
+  color: black !important;
 }
 
-.menuPrincipal-item,
+.pgAulas h1, .pgAulas h2, .pgAulas h3, .pgAulas p {
+  padding: 0px;  
+  color: black !important;
+  margin: 15px;
+}
+
+.menuPrincipal_Item,
 .Sites a {
   display: block;
+  opacity: 1 !important;
   color: white;
   text-decoration: none;
   justify-content: center;
-  width: 12rem;
+  width: 14rem;
   height: 2rem;
   text-decoration: none;
   list-style: none;
@@ -105,7 +123,7 @@ button {
   border-radius: 17px;
   padding: 5px;
 }
-.aula7CSS, .aula6CSS, .aula8CSS{
+.aula7CSS, .aula8CSS{
   display: flex;
   flex-direction: column;
   border: 2px solid yellow;
@@ -120,7 +138,7 @@ button {
   margin: 0 auto;
 }
 
-.aula6Container, .aula8Container{
+.Aula6CursoContainer, .aula8Container{
 display: flex;
 width: 100vw;
 /* height: 15rem; */

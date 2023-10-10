@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+.FutebolContainer h1{
+    color: black !important;
+  }
+
+  button{
+    cursor: pointer;
+    padding: 0px 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    opacity: 0.6;
+  }
+
+    
+  button:hover,
+  .btn-primary{
+    text-decoration: none;
+    color: black;
+    background-color:#FFC700;
+    opacity: 1;
+  }

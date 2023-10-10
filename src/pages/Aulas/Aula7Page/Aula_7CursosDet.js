@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './Aula7.css';
 
 function Aula_7CursosDet() {
     document.title = "Aula7 Cursos Det";
@@ -29,9 +30,9 @@ function Aula_7CursosDet() {
 
     return (
         <>
-            <h1>Detalhes do curso</h1>
-            <h2>{curso.titulo}</h2>
-            <h3>{curso.subtitulo}</h3>
+            <h2>Aula 7 - Detalhes do curso</h2><br/> 
+            <h2>{curso.titulo}</h2><br/>
+            <h3>{curso.subtitulo}</h3><br/>
             <p>{curso.descricao}</p>
             <p>Duração: {curso.duracao} meses</p>
         </>

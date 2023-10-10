@@ -1,17 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
-
 
 function PgInitialAula7() {
     document.title = "Aula 07 Menu"
-    const voltarConst = useNavigate();
-
-
-    // Função para lidar com a navegação para outra página
-    const ClickPgIndex = () => {
-        voltarConst('/');
-        // Caminho para a página desejada
-    };
 
     return (
         <>
@@ -21,9 +11,9 @@ function PgInitialAula7() {
             <div class="aula7Container">
                 <div class="aula7CSS">
                     <ul>
-                        <li> <Link class="menuPrincipal-item" to={"/Aulas/aula7Cursos"}>Cursos</Link></li>
+                        <li> <Link class="menuPrincipal_Item" to={"/Aulas/aula7Cursos"}>Cursos</Link></li>
                         <br />
-                        <li><Link class="menuPrincipal-item" to={"/Aulas/aula7Contato"}>Contato</Link></li>
+                        <li><Link class="menuPrincipal_Item" to={"/Aulas/aula7Contato"}>Contato</Link></li>
                         <br />
                     </ul>
                 </div>

@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
+.BTNAula3{
+  color: black;
+  cursor: pointer;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+

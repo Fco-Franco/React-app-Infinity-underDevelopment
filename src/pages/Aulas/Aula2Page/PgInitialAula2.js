@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom"
+import Texts from './Components/text';
+import Buttom from './Components/buttom';
+import './Aula2.css';
+// impor
+
 function PgInitialAula2() {
-    document.title="Aula 02 Menu"
+    document.title = "Aula 02 Pg Inicial"
     return (
         <>
-            <h2>Aula 02 - Bem vindo</h2>
-            <li> <Link to={"/Aulas"}>Página Inicial Aulas</Link></li>
-
+            <h2>Aula 02 - Página Inicial</h2>
+            <div className="PgInitialAula2">
+                <Texts />
+                <Buttom />
+            </div>
         </>
     )
 }

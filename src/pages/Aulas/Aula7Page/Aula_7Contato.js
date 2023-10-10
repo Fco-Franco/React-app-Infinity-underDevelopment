@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Aula_7Contato() {
     document.title = "Aula 07 Contato"
@@ -25,33 +25,32 @@ function Aula_7Contato() {
 
 
     return (
-<>
-<h2>Aula 7 - Contato</h2>
-<div class="formContainer">
-<form class="formContato" onSubmit={enviar_dados}>
-    <label>Nome</label>
-    <br />
-    <input onChange={(e) => setNome(e.target.value)} required type="text" />
-    <br></br>
+        <>
+            <h2>Aula 7 - Contato</h2>
+            <div class="formContainer">
+                <form class="formContato" onSubmit={enviar_dados}>
+                    <label>Nome</label>
+                    <br />
+                    <input onChange={(e) => setNome(e.target.value)} required type="text" />
+                    <br></br>
 
-    <label>Email</label>
-    <br />
-    <input onChange={(e) => setEmail(e.target.value)} required type="email" />
-    <br />
+                    <label>Email</label>
+                    <br />
+                    <input onChange={(e) => setEmail(e.target.value)} required type="email" />
+                    <br />
 
-    <label>Mensagem</label>
-    <br />
-    <textarea onChange={(e) => setMensagem(e.target.value)} required cols={20} rows={5} />
-    <br />
-    <br />
+                    <label>Mensagem</label>
+                    <br />
+                    <textarea onChange={(e) => setMensagem(e.target.value)} required cols={20} rows={5} />
+                    <br />
+                    <br />
 
-    <div class="formContatoBTN">
-        <Link class="menuPrincipal-item" to={"/Aula_7MSGEnviada"}>Enviarr</Link>
-        <br></br>
-        <button class="menuPrincipal-item">Enviar</button>
-        <br></br>
-
-    </div>
+                    <div class="formContatoBTN">
+                        <Link class="menuPrincipal_Item" to={"/Aula_7MSGEnviada"}>Enviarr</Link>
+                        <br></br>
+                        <button class="menuPrincipal_Item">Enviar</button>
+                        <br></br>
+                    </div>
 
                 </form>
             </div>

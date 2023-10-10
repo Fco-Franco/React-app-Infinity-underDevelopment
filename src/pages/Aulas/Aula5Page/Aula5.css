@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.Aula5Container, .Aula5Container a, .Aula5Container p, .Aula5Container h3{
+    color: black;
+    padding: 0px 20px;
+    border: none;
+    margin: 0px;
+}

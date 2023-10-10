@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom"
-
 import { Outlet } from "react-router-dom"
 
 
@@ -8,7 +6,7 @@ function PgInitial() {
     const SP = "&nbsp;&nbsp;"
     return (
         <>
-            <h1>Index Page - Página Inicial</h1>
+            <h1 class="TextGeral">Index Page - Página Inicial</h1>
             <div class="Sites">
                 <h3>Sites Uteis</h3>
                 {/* <Link to={"/Aulas"}>Página Inicial Aulas</Link> */}

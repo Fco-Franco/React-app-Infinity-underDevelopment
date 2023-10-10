@@ -8,13 +8,13 @@ function Menu() {
     <>
         <nav class="menuPrincipal" >
             <ul>
-                <li> <Link class="menuPrincipal-item" to={"/"}>Página Inicial</Link></li>
+                <li> <Link class="menuPrincipal_Item" to={"/"}>Página Inicial</Link></li>
 
-                <li><Link class="menuPrincipal-item" to={"/esporte"}>Menu Esporte</Link></li>
+                <li><Link class="menuPrincipal_Item" to={"/esporte"}>Menu Esporte</Link></li>
         
-                <li><Link class="menuPrincipal-item" to={"/aulas"}>Menu Aulas</Link></li>
+                <li><Link class="menuPrincipal_Item" to={"/aulas"}>Menu Aulas</Link></li>
 
-                <li><Link class="menuPrincipal-item" onClick={() => voltar(-1)}>Voltar</Link></li>
+                <li><Link class="menuPrincipal_Item" onClick={() => voltar(-1)}>Voltar</Link></li>
 
             </ul>
         </nav>

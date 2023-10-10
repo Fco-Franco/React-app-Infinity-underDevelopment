@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 
 function Curso() {
@@ -9,9 +9,9 @@ return(
 <h2>Aula 7 - Esses são os nossos cursos</h2>
 <ul>
     <li>
-        <Link class="menuPrincipal-item" to="../aula7CursoDet/programacao">Programação Fullstack</Link>
+        <Link class="menuPrincipal_Item" to="../aula7CursoDet/programacao">Programação Fullstack</Link>
     <br/>
-        <Link class="menuPrincipal-item" to="../aula7CursoDet/data">Data Science</Link>
+        <Link class="menuPrincipal_Item" to="../aula7CursoDet/data">Data Science</Link>
     </li>
 </ul> 
 <Outlet/>

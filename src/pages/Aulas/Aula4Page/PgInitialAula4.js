@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
-import ButtonComponent from "../../../Components/Button/Index";
+// import ButtonComponent from "../../../Components/Button/Index";
 import EventForm from "../../../Components/Forms/CadastroForm";
 import ButtonInitialAulas from "../../../Components/Button/ButtonInitialAulas";
+import './Aula4.css';
 
 function PgInitialAula4() {
 
@@ -16,7 +17,7 @@ function PgInitialAula4() {
     const nome1 = "Abel"
 
     const [nome2, setNome2] = useState("Coisa  - Nome 2")
-    console.log(nome2)
+    // console.log(nome2)
     // const atualizarNome = () => {
     //   setNome2("Nome atualizado");
     // }
@@ -118,6 +119,7 @@ function PgInitialAula4() {
 
     return (
         <>
+        <div class="Aula4Container">
             <h2>Aula 04 - ReactHooks</h2>
             <Link to={"/Aulas"}>Página Inicial Aulas</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <ButtonInitialAulas></ButtonInitialAulas>
@@ -125,9 +127,10 @@ function PgInitialAula4() {
 
 
             {/*-------------------------------------- useState --------------------------------------*/}
-            <hr />
+            <br /><br />
+<b>--------------------------------------------------------------------------------------------<br /></b>
             <b><h2> useState </h2>
-                ---------------------------------------------------------------------------------------------<br />
+                --------------------------------------------------------------------------------------------<br />
                 {/* {setNome1} <br /> */}
                 Nome 1: {nome1} <br /><br />
                 {/* {setNome2} <br /> */}
@@ -141,38 +144,39 @@ function PgInitialAula4() {
 
 
                 {/*-------------------------------------- Contador --------------------------------------*/}
-                -------------------------------------- Contador    -------------------------------------- <br /><br />
+                ------------------------------------------ Contador    ------------------------------------------ <br /><br />
                 <button onClick={contarFunction}> Contador </button> &nbsp; &nbsp; {contador}<br /><br />
 
 
                 {/*-------------------------------------- Contador 1 --------------------------------------*/}
-                -------------------------------------- Contador 1 -------------------------------------- <br /><br />
+                ------------------------------------------ Contador 1 ---------------------------------------- <br /><br />
                 <button onClick={aumentarFunction}> Aumentar 1 </button>&nbsp;&nbsp;
                 {num1}&nbsp;&nbsp;
                 <button onClick={diminuirFunction}> Diminuir 1 </button><br /><br />
 
                 {/*------------------------------ Contador 2 ---------------------------------*/}
-                -------------------------------------- Contador 2 -------------------------------------- <br /><br />
+                ------------------------------------------ Contador 2 ---------------------------------------- <br /><br />
                 <button onClick={() => setNum2(num2 + 1)}> Aumentar 2 </button>&nbsp;&nbsp;
                 {num2}&nbsp;&nbsp;
+
                 <button onClick={() => num2 > 0 ? setNum2(num2 - 1) : null}> Diminuir 2</button><br /><br />
-                <button onClick={() => {
-                    console.log(num2)
-                    setNum2(num2 + 1)
-                }}> Aumentar 2.1 </button>&nbsp;&nbsp;
-                <ButtonComponent onClick={() => num2 > 0 ? setNum2(num2 - 1) : null}> Diminuir 2.1</ButtonComponent><br /><br />
+
+                <button  onClick={() => { console.log(num2) ; setNum2(num2 + 1)    }}> Aumentar 2.1 </button>&nbsp;&nbsp;
+
+                {/* <ButtonComponent onClick={() => num2 > 0 ? setNum2(num2 - 1) : null}> Diminuir 2.1</ButtonComponent><br /><br /> */}
                 {/* Duvida: pq nao funciona? */}
+                <button onClick={() => { num2 > 0 ? setNum2(num2 - 1) : console.log(num2); }}>Diminuir 2.1</button><br /><br />
 
                 {/*-------------------------------------- useEffect --------------------------------------*/}
-                <hr />
+                --------------------------------------------------------------------------------------------<br />
                 <h2> useEffect </h2>
-                ---------------- useEffect 1 -----------------------------------------<br /><br />
-                <button onClick={() => setContadoruseEffect(contadoruseEffect + 1)}> Contador useEffect</button>&nbsp;&nbsp;
+                ------------------------------------------- useEffect 1 ----------------------------------------<br /><br />
+                <button onClick={() => setContadoruseEffect(contadoruseEffect + 1)}> Multiplicador useEffect</button>&nbsp;&nbsp;
                 {contadoruseEffect} <br /><br />
                 <p> Multiplicador useEffect : {multiplicadorUseEffect} <br /></p>
 
                 {/* ---------------- useEffect 2 COM DUAS FUNÇÕES ----------------------------------------- */}
-                ---------------- useEffect 2 COM DUAS FUNÇÕES -----------------------------------------<br /><br />
+                ----------------------------------- useEffect 2 COM DUAS FUNÇÕES -------------------------------<br /><br />
                 <button onClick={() => setCurso(curso = "blq")}>Prog FullStack</button>&nbsp;&nbsp;
                 <button>Prog Data Science</button><br /><br />
                 Estou cursanco: {curso}<br /><br />
@@ -183,15 +187,15 @@ function PgInitialAula4() {
 
 
                 {/* ---------------- useEffect 2 COM UMA FUNÇÃO USANDO O EVENT ----------------------------------------- */}
-                ---------------- useEffect 2 COM UMA FUNÇÃO USANDO O EVENT -----------------------------------------<br /><br />
+                ---------------------------- useEffect 2 COM UMA FUNÇÃO USANDO O EVENT ------------------------<br /><br />
                 <button onClick={clicou1}>Programação FullStack</button>&nbsp;&nbsp;
                 <button onClick={clicou1}>Data Science</button>
-                <p>Eu estou cursando: {curso1} </p>
+                <p>Eu estou cursando: {curso1} </p><br/>
 
 
-                {/* ----------------------------------------------- EXERCICIO ----------------------------------------- */} <hr /> <br /></b>
+                -------------------------------------------- EXERCICIO ---------------------------------------- <br /></b>
 
-            <h4>Crie um pequeno formulário de cadastro para criar um novo evento com campo de nome, data e link de uma imagem. Quando a pessoa cadastrar, o state da lista de eventos deve ser atualizado para adicionar o evento cadastrado<br /></h4>
+            <h4>Crie um pequeno formulário de cadastro para criar um novo evento com campo de nome, data e link de uma imagem. <br/>Quando a pessoa cadastrar, o state da lista de eventos deve ser atualizado para adicionar o evento cadastrado<br /></h4>
             <div>
                 <h2>Cadastro de Eventos - Chat GBT</h2>
                 <EventForm onAddEvent={handleAddEvent} />
@@ -208,7 +212,7 @@ function PgInitialAula4() {
                 </ul>
             </div>
 
-
+            </div>
         </>
     )
 }

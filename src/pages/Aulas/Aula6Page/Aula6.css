@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+.Aula6CursoContainer,
+.Aula6CursoContainer a,
+.Aula6CursoContainer p,
+.Aula6CursoContainer h3 {
+    color: black;
+    /* padding: 0px 5px; */
+    border: none;
+    margin: 0px;
+}
+
+p {
+    color: black;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem 1.5rem;
+}
+
+h1,
+h2,
+h3,
+li {
+    color: black;
+    margin: 1rem;
+}
+
+textarea {
+    height: 30%;
+}
+
+.Aula6CursoContainer {
+    flex-direction: column;
+    border: 2px solid yellow;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
+    background-color: #5b5f66;
+    height: 10rem;
+    width: 25%;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.menuPrincipal_Item {
+    display: block;
+    opacity: 1 !important;
+    color: white !important;
+    text-decoration: none;
+    justify-content: center;
+    width: 10rem;
+    height: 2rem;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    border: 4px solid yellow !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
+    background-color: #5b5f66;
+}

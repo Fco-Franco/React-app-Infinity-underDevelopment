@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+
 function Aula_8Menu() {
     document.title = "Aula 08 Menu"
     const voltarConst = useNavigate();
@@ -12,7 +13,7 @@ function Aula_8Menu() {
     return (
         <>
             <h2>Aula 8 - Page Aula 8</h2>
-            
+
         </>
     )
 }

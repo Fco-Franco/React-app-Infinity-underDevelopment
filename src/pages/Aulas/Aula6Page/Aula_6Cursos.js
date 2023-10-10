@@ -1,5 +1,6 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
+import './Aula6.css';
 
 function Aula_6Curso() {
     document.title = "Aula6-Cursos"
@@ -19,10 +20,10 @@ function Aula_6Curso() {
     <li>Data Science</li>
 </ul>
 
-<div class="aula6CSS">
-    <Link class="menuPrincipal-item" to={"/Aulas"}>Página Inicial Aulas</Link>
-    <button class="menuPrincipal-item" onClick={ClickPgIndex}>Página inicial</button>
-    <button class="menuPrincipal-item" onClick={() => voltar(-1)}>Voltar</button>
+<div class="Aula6CursoContainer">
+    <Link class="menuPrincipal_Item" to={"/Aulas"}>Página Aulas</Link>
+    <button class="menuPrincipal_Item" onClick={ClickPgIndex}>Página inicial</button>
+    <button class="menuPrincipal_Item" onClick={() => voltar(-1)}>Voltar</button>
 </div>
 {/* <Outlet/> */}
 </>

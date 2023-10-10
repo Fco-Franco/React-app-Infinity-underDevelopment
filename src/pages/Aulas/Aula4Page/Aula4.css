@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.Aula4Container, .Aula4Container a, .Aula4Container p, .Aula4Container h3{
+    color: black;
+    padding: 0px 20px;
+    border: none;
+    margin: 0px;
+}
+
+button{
+    background-color: rgb(24, 23, 23);
+    border: 3px solid yellow;
+    border-radius: 8px;
+    box-sizing: border-box;
+}

@@ -1,6 +1,7 @@
-import { useEffect, useState, Routes, Route } from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import ButtonInitialAulas from "../../../Components/Button/ButtonInitialAulas";
+import './Aula5.css';
 
 function PgInitialAula5() {
   document.title = "Aula 05 Menu"
@@ -37,14 +38,14 @@ function PgInitialAula5() {
   }
 
   // useEffect(()=>{},[]){  } useEffect recebe uma funcao(atividade) e uma array(O que vai fazer)
-  useEffect(() => {
-    {
-      if (transformReact2 != null) {
-        alert(transformReact2)
-        document.title = transformReact2
-      }
-    }
-  }, [transformReact2])
+  // useEffect(() => {
+  //   {
+  //     if (transformReact2 != null) {
+  //       alert(transformReact2)
+  //       document.title = transformReact2
+  //     }
+  //   }
+  // }, [transformReact2])
   //  #endregion
 
   // #region useState Router 
@@ -53,6 +54,7 @@ function PgInitialAula5() {
 
   return (
     <>
+    <div class="Aula5Container">
       {/* <Routes>
         <Route index element={<AulasMenu />} />
       </Routes> */}
@@ -67,7 +69,9 @@ function PgInitialAula5() {
 
       {/* #region region useState 1 funcoes  */}
       <>
-        <hr /><h3>#region useState 1 funcao </h3>
+      <br/><b>--------------------------------------------------------------------------------------------<br /></b>
+      <br/>
+       <h3>#region useState 1 funcao </h3>
         <button onClick={transformReact2funcao}>Java Script</button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button onClick={transformReact2funcao}>React</button>
@@ -76,23 +80,28 @@ function PgInitialAula5() {
 
       {/* #region region useState arowFunction  */}
       <>
-        <hr /><h3>#region useState arowFunction </h3>
-        <button onClick={() => setLinguagem("Java Script arowFunction")}>Java Script arowFunction</button>
+      <br/><b>--------------------------------------------------------------------------------------------<br /></b>
+      <br/>
+       <h3>#region useState arowFunction </h3>
+        <button onClick={() => setLinguagem("Java Script arowFunction")}>Java Script</button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button onClick={(e) => setLinguagem(e.target.textContent)}>Java Script arowFunction 1</button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onClick={() => setLinguagem("React arowFunction")}>React arowFunction</button>
-        <p>{linguagem}</p>
+        <button onClick={() => setLinguagem("React arowFunction")}>React arowFunction</button><br/><br/>
+        <b>Return  : </b>{linguagem}
       </>
 
       {/* #region region useState 2 funcoes  */}
       <>
-        <hr /><h3>#region useState 2 funcoes </h3>
+      <br/><b>--------------------------------------------------------------------------------------------<br /></b>
+      <br/><h3>#region useState 2 funcoes </h3>
         <button onClick={transformJS}>Java Script 2 Funcoes</button>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onClick={transformReact}>React 2 Funcoes</button>
-        <p>{linguagem1}</p>
+        <button onClick={transformReact}>React 2 Funcoes</button><br/><br/>
+        <b>Clicado em  : </b>{linguagem1}
+      <br/><b>--------------------------------------------------------------------------------------------<br /></b>
       </>
+      </div>
       <Outlet />
     </>
   )

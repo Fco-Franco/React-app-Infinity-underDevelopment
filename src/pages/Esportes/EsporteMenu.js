@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 
 function EsporteMenu() {
@@ -7,9 +7,9 @@ function EsporteMenu() {
         <>
             <nav class="menuPrincipal">
                 <ul>
-                    <li> <Link class="menuPrincipal-item" to={"/esporte"}>Esportes pg Inicial</Link></li>
+                    <li> <Link class="menuPrincipal_Item" to={"/esporte"}>Esportes Inicial</Link></li>
 
-                    <li> <Link class="menuPrincipal-item" to={"futebol"}>Futebol</Link></li>
+                    <li> <Link class="menuPrincipal_Item" to={"futebol"}>Futebol</Link></li>
                 </ul>
             </nav>
 
@@ -19,5 +19,3 @@ function EsporteMenu() {
 }
 
 export default EsporteMenu
-
-// Se nao for index criar componente com letra inicial maiuscula

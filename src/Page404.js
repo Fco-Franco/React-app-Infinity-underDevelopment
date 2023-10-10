@@ -6,7 +6,7 @@ function Page404(){
 
     return(
         <>        <h1>Pagina nao existe. Erro 404</h1>
-        <button class="menuPrincipal-item" onClick={() => voltar(-1)}>Voltar</button>
+        <button class="menuPrincipal_Item" onClick={() => voltar(-1)}>Voltar</button>
         </>
     )
 }
