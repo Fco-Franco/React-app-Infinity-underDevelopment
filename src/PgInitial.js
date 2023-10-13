@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-
+import "./App.css"
 
 function PgInitial() {
     document.title = "React App- Pg Inicial"
