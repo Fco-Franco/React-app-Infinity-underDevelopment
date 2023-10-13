@@ -1,26 +1,68 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-.FutebolContainer h1{
-    color: black !important;
-  }
+.futebolContainer {
+  display: flex;
+  color: black !important;
+}
 
-  button{
-    cursor: pointer;
-    padding: 0px 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: white;
-    opacity: 0.6;
-  }
+button {
+  cursor: pointer;
+  padding: 0px 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  opacity: 0.6;
+}
 
-    
-  button:hover,
-  .btn-primary{
-    text-decoration: none;
-    color: black;
-    background-color:#FFC700;
-    opacity: 1;
-  }
+
+button:hover,
+.btn-primary {
+  text-decoration: none;
+  color: black;
+  background-color: #FFC700;
+  opacity: 1;
+}
+
+img {
+  width: 5rem;
+  border: 0px solid #978c63;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 8rem;
+  background-color: #978c63;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   /* box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.75); */
+  text-transform: uppercase;
+  border: 3px solid rgb(248, 248, 10) !important;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.card a {
+  display: block;
+}
+
+.cardItem{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
