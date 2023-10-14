@@ -5,6 +5,10 @@
 .futebolContainer {
   display: flex;
   color: black !important;
+  flex-wrap: wrap;
+}
+h1, h2, h3, li {
+  margin: 0.7rem !important;
 }
 
 button {

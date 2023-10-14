@@ -4,6 +4,7 @@ import { CategoriaGames, CategoriaTitle } from "../MMORPG/style";
 import Card from "../../components/Card";
 
 function FPS() {
+  document.title = "index em FPS"
   const [jogos, setJogos] = useState();
 
   async function buscar_jogos() {
@@ -17,7 +18,8 @@ function FPS() {
 
   return (
     <>
-      <CategoriaTitle>MMORPG</CategoriaTitle>
+    <h2>Aula 8</h2>
+      <CategoriaTitle>FPS</CategoriaTitle>
       <CategoriaGames>
         {jogos &&
           jogos.map((jogo) => (

@@ -43,7 +43,11 @@ import Aula_7CursosDet from "./pages/Aulas/Aula7Page/Aula_7CursosDet";
 
 //Aula8
 import Aula8Pg01 from "./pages/Aulas/Aula8Page/Aula8Pg01"
-
+import Header from "./pages/Aulas/Aula8Page/components/Header";
+import MMORPG from "./pages/Aulas/Aula8Page/pages/MMORPG";
+import FPS from "./pages/Aulas/Aula8Page/pages/FPS";
+import MOBA from "./pages/Aulas/Aula8Page/pages/MOBA";
+import Jogo from "./pages/Aulas/Aula8Page/pages/Jogo";
 
 
 import Page404 from "./Page404";
@@ -65,53 +69,52 @@ function App2() {
                     </>
 
                     {/* Rota Aulas */}<>
-    <Route path="/aulas" element={<AulasMenu />} >
-<Route index element={<AulasHome />} />
+                        <Route path="/aulas" element={<AulasMenu />} >
+                            <Route index element={<AulasHome />} />
 
-{/* Rota Aula 1 */}<>
-    <Route path="aula1Pg01" element={<PgInitialAula1 />} />
-</>
-{/* Rota Aula 2*/}<>
-    <Route path="aula2Pg01" element={<PgInitialAula2 />} />
-</>
+                            {/* Rota Aula 1 */}<>
+                                <Route path="aula1Pg01" element={<PgInitialAula1 />} />
+                            </>
+                            {/* Rota Aula 2*/}<>
+                                <Route path="aula2Pg01" element={<PgInitialAula2 />} />
+                            </>
 
-{/* Rota Aula 3 */}<>
-    <Route path="aula3Pg01" element={<PgInitialAula3 />} />
-</>
+                            {/* Rota Aula 3 */}<>
+                                <Route path="aula3Pg01" element={<PgInitialAula3 />} />
+                            </>
 
-{/* Rota Aula 4 */}<>
-    <Route path="aula4Pg01" element={<PgInitialAula4 />} />
-</>
+                            {/* Rota Aula 4 */}<>
+                                <Route path="aula4Pg01" element={<PgInitialAula4 />} />
+                            </>
 
-{/* Rota Aula 5 */}<>
-    <Route path="aula5Pg01" element={<PgInitialAula5 />} />
-</>
+                            {/* Rota Aula 5 */}<>
+                                <Route path="aula5Pg01" element={<PgInitialAula5 />} />
+                            </>
 
-{/* Rota Aula 6 */}<>
-    <Route path="aula6Pg01" element={<Aula6Pg01 />} />
-    <Route path="aula6Cursos" element={<Aula_6Cursos />} />
-    <Route path="aula6Contato" element={<Aula_6Contato />} />
-</>
+                            {/* Rota Aula 6 */}<>
+                                <Route path="aula6Pg01" element={<Aula6Pg01 />} />
+                                <Route path="aula6Cursos" element={<Aula_6Cursos />} />
+                                <Route path="aula6Contato" element={<Aula_6Contato />} />
+                            </>
 
 
 {/* Rota Aula 7 */}<>
 <Route path="aula7Pg01" element={<Aula7Pg01 />} />
-    <Route path="aula7Cursos" element={<Aula_7Cursos />} />
-    <Route path="aula7CursoDet/:id" element={<Aula_7CursosDet />}/>
-    
-    <Route path="aula7Contato" element={<Aula_7Contato />} />
-    <Route path="aula7MSGEnviada" element={<Aula_7MSGEnviada />} />
+<Route path="aula7Cursos" element={<Aula_7Cursos />} />
+<Route path="aula7CursoDet/:id" element={<Aula_7CursosDet />} />
+
+<Route path="aula7Contato" element={<Aula_7Contato />} />
+<Route path="aula7MSGEnviada" element={<Aula_7MSGEnviada />} />
 </>
 
-{/* Rota Aula 8 */}<>
-<Route path="aula8Pg01" element={<Aula8Pg01 />} />
-    <Route path="aula7Cursos" element={<Aula_7Cursos />} />
-    <Route path="aula7CursoDet/:id" element={<Aula_7CursosDet />}/>
-
-    <Route path="aula7Contato" element={<Aula_7Contato />} />
-    <Route path="aula7MSGEnviada" element={<Aula_7MSGEnviada />} />
-</>
-    </Route>
+    {/* Rota Aula 8 */}<>
+        <Route path="aula8Pg01" element={<Aula8Pg01 />}/>
+        <Route path="mmorpg" element={<MMORPG />} />
+        <Route path="fps" element={<FPS />} />
+        <Route path="moba" element={<MOBA />} />
+        <Route path="jogo/:id" element={<Jogo />} />
+                            </>
+                        </Route>
                     </>
                 </Route>
 

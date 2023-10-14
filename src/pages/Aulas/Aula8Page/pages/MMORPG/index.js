@@ -4,6 +4,7 @@ import { CategoriaGames, CategoriaTitle } from "./style";
 import axios from "axios";
 
 function MMORPG() {
+  document.title = "index em MMORPG"
   const [jogos, setJogos] = useState();
 
   async function buscar_jogos() {
@@ -17,6 +18,7 @@ function MMORPG() {
 
   return (
     <>
+      <h2>Aula 8</h2>
       <CategoriaTitle>MMORPG</CategoriaTitle>
       <CategoriaGames>
         {jogos &&

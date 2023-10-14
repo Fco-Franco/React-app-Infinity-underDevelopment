@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function Jogo() {
+  document.title = "index em Jogo"
   const { id } = useParams();
 
   const [jogo, setJogo] = useState();
@@ -19,6 +20,7 @@ function Jogo() {
 
   return (
     <>
+    <h2>Aula 8</h2>
       {jogo && (
         <JogoSection>
           <h1>{jogo.titulo}</h1>

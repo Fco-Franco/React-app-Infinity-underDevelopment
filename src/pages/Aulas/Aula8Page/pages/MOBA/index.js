@@ -4,6 +4,7 @@ import { CategoriaGames, CategoriaTitle } from "../MMORPG/style";
 import Card from "../../components/Card";
 
 function MOBA() {
+  document.title = "index em MOBA"
   const [jogos, setJogos] = useState();
 
   async function buscar_jogos() {
@@ -17,6 +18,7 @@ function MOBA() {
 
   return (
     <>
+    <h2>Aula 8</h2>
       <CategoriaTitle>MOBA</CategoriaTitle>
       <CategoriaGames>
         {jogos &&

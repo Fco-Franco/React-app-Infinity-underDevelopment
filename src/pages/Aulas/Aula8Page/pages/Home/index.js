@@ -3,6 +3,7 @@ import Card from "../../components/Card";
 import { HomeGames, HomeSection, HomeTitle } from "./style";
 
 function Home() {
+  document.title = "index em Home"
   return (
     <>
       <HomeSection>

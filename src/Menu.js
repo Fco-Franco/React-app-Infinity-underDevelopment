@@ -1,4 +1,5 @@
-import { Link, Outlet, useNavigate } from "react-router-dom"
+import { Link, Outlet, useNavigate, useLocation } from "react-router-dom"
+import './App.css';
 
 
 function Menu() {
@@ -10,7 +11,7 @@ function Menu() {
             <ul>
                 <li> <Link class="menuPrincipal_Item" to={"/"}>Página Inicial</Link></li>
 
-                <li><Link class="menuPrincipal_Item" to={"/esporte"}>Menu Esporte</Link></li>
+                <li><Link class="menuPrincipal_Item" to={"/esporte"} >Menu Esporte</Link></li>
         
                 <li><Link class="menuPrincipal_Item" to={"/aulas"}>Menu Aulas</Link></li>
 

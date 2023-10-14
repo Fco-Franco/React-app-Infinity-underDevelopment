@@ -19,7 +19,6 @@ button :hover, button :focus{
   font-size: large;
 }
 
-
 li a:hover, li a:focus, .Sites a:hover{
   background-color: #FFC700;
   opacity: 0,6;
@@ -44,7 +43,8 @@ li a:hover, li a:focus, .Sites a:hover{
   align-items: center;
   background-color: gray;
   width: 100%;
-  padding: 15px;
+  padding: 0px;
+  margin: 0px;
   font-weight: bolder;
   align-items: center;
 }
@@ -55,8 +55,8 @@ li a:hover, li a:focus, .Sites a:hover{
   width: 100%;
   justify-content: left;
   flex-wrap: wrap;
-  gap: 5px;
-  padding: 10px;  
+  gap: 2px;
+  padding: 1px;  
 }
 
 li {
@@ -94,7 +94,6 @@ li {
   box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.75);
   background-color: #5b5f66;
 }
-
 
 .Sites a {
   display: flex;
@@ -195,4 +194,8 @@ margin: 0 auto;
   align-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.activeMenuIitem{
+  color: red !important;
 }

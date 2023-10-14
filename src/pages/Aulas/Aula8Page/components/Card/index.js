@@ -6,9 +6,10 @@ function Card({ title, image, id }) {
 
   return (
     <>
+    
       <CardDiv
         onClick={() => {
-          navigate(`/jogo/${id}`);
+          navigate(`/aulas/jogo/${id}`);
         }}
       >
         <CardTitle>{title}</CardTitle>
