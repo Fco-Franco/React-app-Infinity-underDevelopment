@@ -39,7 +39,8 @@ function PgInitialAula3() {
         <>
             {/* <React.Fragment> Conteudo </React.Fragment> ou <>Conteudo</> - Nao precisa da
       div cria uma div falsa  */}
-            <h2>Aula 03 - Parte 1 - Revisao</h2>
+            <h2>Aula 03 - Página Inicial</h2>
+            <h3>Parte 1 - Revisao</h3>
             <br /><hr /><TitleComponent>Import Title</TitleComponent>      <br />
             <hr /><TitleComponent1 textoDeH1="Texto escrito em H11 - Ao clicar, altera a cor" funcaoClicou={mudarCor}></TitleComponent1>      <br/>
             {/* <ButtonComponent> Texto </ButtonComponent> */}

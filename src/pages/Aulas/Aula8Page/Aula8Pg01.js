@@ -15,7 +15,7 @@ function Aula_8Menu() {
 
     return (
         <>
-            <h2>Aula 8 - Página Inicial</h2>
+            <h2>Aula 08 - Página Inicial</h2>
             <HomeSection>
         <HomeTitle>Categorias</HomeTitle>
         <HomeGames>

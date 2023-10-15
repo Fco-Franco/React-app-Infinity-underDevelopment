@@ -14,7 +14,7 @@ function Aula6Pg01() {
 
     return (
         <>
-            <h2>Aula 6 - Página Inicial</h2>
+            <h2>Aula 06 - Página Inicial</h2>
 
             <div class="Aula6CursoContainer">
                 {/* <div class="aula6"> */}

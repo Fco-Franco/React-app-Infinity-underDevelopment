@@ -120,7 +120,9 @@ function PgInitialAula4() {
     return (
         <>
         <div class="Aula4Container">
-            <h2>Aula 04 - ReactHooks</h2>
+            <h2>Aula 04 - Página Inicial</h2>
+            <b>--------------------------------------------------------------------------------------------</b>
+            <h3>ReactHooks</h3>
             <Link to={"/Aulas"}>Página Inicial Aulas</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <ButtonInitialAulas></ButtonInitialAulas>
 

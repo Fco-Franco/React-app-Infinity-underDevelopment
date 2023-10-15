@@ -1,4 +1,4 @@
-import { Link, Outlet, useNavigate, useLocation } from "react-router-dom"
+import { Link, Outlet, useNavigate } from "react-router-dom"
 import './App.css';
 
 
@@ -28,3 +28,26 @@ function Menu() {
 export default Menu
 
 // Se nao for index criar componente com letra inicial maiuscula
+
+// import React from 'react';
+// import { Link, useLocation } from 'react-router-dom';
+
+// function MenuPrincipalItem({ to, label }) {
+//   const location = useLocation();
+
+//   // Verifique se o caminho da URL atual começa com o caminho do link principal
+//   const isActive = location.pathname.startsWith(to);
+
+//   // Estilize o link com base na ativação
+//   const linkClassName = isActive ? 'menuPrincipal_Item active' : 'menuPrincipal_Item';
+
+//   return (
+//     <Link to={to} className={linkClassName}>
+//       {label}
+//     </Link>
+//   );
+// }
+
+// export default MenuPrincipalItem;
+
+

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 
 import './Esporte.css';
@@ -6,9 +6,12 @@ import './Esporte.css';
 function EsporteFutebol() {
     document.title = "Esporte Futebol"
     const voltar = useNavigate();
+    const location = useLocation();
     return (
         <>
             <h2>Pagina Inicial Futebol</h2>
+            <pre>Location = {JSON.stringify(location.pathname, null, 2)}</pre>
+   
             <ul>
                 <div class="futebolContainer">
                     <li>

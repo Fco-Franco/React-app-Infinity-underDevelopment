@@ -5,7 +5,7 @@ function PgInitialAula7() {
 
     return (
         <>
-            <h2>Aula 7 - Página Inicial</h2>
+            <h2>Aula 07 - Página Inicial</h2>
             <br />
 
             <div class="aula7Container">
